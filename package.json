@@ -1,0 +1,15 @@
+{
+  "name": "recommender",
+  "version": "1.0.0",
+  "description": "Play recommendation microservice for blackjack program.",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marcos Valdez",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+}
