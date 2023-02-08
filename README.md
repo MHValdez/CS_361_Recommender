@@ -48,10 +48,10 @@ __________________________________________________
 
 To review code:
 
-.env            defines host port
-index.mjs       is main; Express server
-lookup.mjs      function; queries play table based on GET parameters; returns strings representing recommendation
-playTable.mjs   object; array of arrays with play reccomendations based on state of play queries*;
+- .env            defines host port
+- index.mjs       is main; Express server
+- lookup.mjs      function; queries play table based on GET parameters; returns strings representing recommendation
+- playTable.mjs   object; array of arrays with play reccomendations based on state of play queries*;
 
 * playTable is designed for human readablity rather than space efficiency.
 * playTable hard total values are in descending order
