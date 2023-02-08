@@ -36,8 +36,9 @@ With server running, send HTTP GET request to localhost:[chosen port] with query
   
 Where:
 
-- [total] is an integer in [2..20] representing the hard total of a player's blackjack hand
-- [upcard] is an integer in [2..10] representing a blackjack dealer's upcard
+- [total] is an integer in [2..20] representing the hard total of a player's blackjack hand.
+- [upcard] is an integer in [2..11] representing a blackjack dealer's upcard.
+- An Ace upcard is assumed to be valued at 11 and must be submitted as that integer value.
 
 Server will lookup optimal action under basic strategy and respond with one of two strings:
 - "The odds are in you favor to stand."
