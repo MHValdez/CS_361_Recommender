@@ -1,0 +1,22 @@
+@startuml recommender
+
+participant blackjackGame
+participant serverMain
+participant lookupFunction
+participant playTable
+
+activate blackjackGame
+blackjackGame -> serverMain: HTTP GET request w/ queries:\nplayerTotal\ndealerUpcard
+activate serverMain
+serverMain -> lookupFunction: lookup()
+activate lookupFunction
+lookupFunction -> playTable: playTable indices
+activate playTable
+playTable --> lookupFunction: optimal play
+destroy playTable
+lookupFunction --> serverMain: valid play
+destroy lookupFunction
+serverMain --> blackjackGame:  HTTP GET response w/ body:\nstring
+deactivate serverMain
+
+@enduml
