@@ -1,6 +1,8 @@
 # CS_361_Recommender
 
-An Express server that recommends blackjack strategy based on current state of play.
+This is a microservice provided for a partner's application. The application is a Discord
+bot blackjack game. This microservice is an Express server that recommends a blackjack
+strategy from a lookup table based on the current state of play.
 
 Dependencies:
 - express
