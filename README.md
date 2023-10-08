@@ -4,6 +4,10 @@ This is a microservice provided for a partner's application. The application is 
 bot blackjack game. This microservice is an Express server that recommends a blackjack
 strategy from a lookup table based on the current state of play.
 
+## Development Videos
+- [Demonstration of microservice receiving and responding to a request](https://www.youtube.com/watch?v=n-b2P14xqAQ)
+- [Demonstration of my microservice communicating with my partner's separate application](https://www.youtube.com/watch?v=SPsxO-jKW_w)
+
 Dependencies:
 - express
 - dotenv
